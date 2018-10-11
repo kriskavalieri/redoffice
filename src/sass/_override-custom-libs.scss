@@ -1,0 +1,437 @@
+.abc-checkbox, .abc-radio {
+  margin-bottom: 20px;
+
+  label {
+    .abc-label-text {
+      display: inline-block;
+      position: relative;
+      top: 2px;
+      padding-left: 13px;
+    }
+
+    &::before{
+      width: 22px;
+      height: 22px;
+      border: 2px solid $input-border-color;
+      @include transition(border 0.15s ease-in-out, color 0.15s ease-in-out, background-color 0.15s ease-in-out);
+    }
+
+  }
+}
+
+.abc-checkbox {
+  padding-left: 1.25rem;
+
+  label{
+    padding-left: 0;
+
+    &::before{
+      border-radius: 0;
+      @include transition(border 0.15s ease-in-out, color 0.15s ease-in-out, background-color 0.15s ease-in-out);
+    }
+
+    &::after {
+      width: 20px;
+      height: 20px;
+      top: 2px;
+      left: 2px;
+      text-align: initial;
+    }
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+
+    &:focus + label::before{
+      outline: none;
+    }
+
+
+    &:checked + label::after{
+      font-family: "Ionicons";
+      content: "\F2BC";
+      font-size: 15px;
+    }
+
+    &:disabled + label{
+      opacity: 0.5;
+    }
+  }
+}
+
+.abc-radio {
+  padding-left: 1.25rem;
+  label {
+    padding-left: 0;
+
+    &::after {
+      width: 10px;
+      height: 10px;
+      top: 7.8px;
+      left: 6px;
+      @include media-breakpoint-up(lg){
+        top: 8.8px;
+      }
+    }
+  }
+
+  input[type="radio"] {
+
+    &:focus + label::before {
+      outline: none;
+    }
+  }
+}
+
+
+.tooltip.redoffice-tooltip {
+  @extend .tooltip.show;
+
+  .tooltip-inner {
+    box-shadow: $tooltip-box-shadow;
+    line-height: $tooltip-line-height;
+    font-weight: $tooltip-font-weight;
+  }
+
+  .tooltip-arrow {
+    @extend .arrow;
+  }
+
+  &[x-placement^="top"] {
+    @extend .bs-tooltip-top;
+  }
+
+  &[x-placement^="bottom"] {
+    @extend .bs-tooltip-bottom;
+  }
+
+  &[x-placement^="right"] {
+    @extend .bs-tooltip-right;
+    margin-left: .15rem;
+  }
+
+  &[x-placement^="left"] {
+    @extend .bs-tooltip-left;
+    margin-right: .15rem;
+  }
+
+  &.popover {
+    line-height: $popover-line-height;
+    box-shadow: $popover-box-shadow;
+
+    .popover-header, .popover-body {
+      text-align: left;
+      padding-right: 0;
+    }
+
+    .popover-inner {
+      max-width: 100%;
+      box-shadow: none;
+
+      > * {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+
+    .popover-header {
+      font-family: Montserrat;
+      font-weight: $popover-header-font-weight;
+    }
+
+    .popover-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-weight: 900;
+      font-size: 1.35rem;
+    }
+
+    .popover-content:first-child {
+      .popover-header, .popover-body {
+        padding:  $popover-body-padding-y $popover-header-no-icon-padding-x;
+        padding-right: 0;
+      }
+    }
+
+    &[x-placement^="top"] {
+      @extend .bs-popover-top;
+    }
+
+    &[x-placement^="bottom"] {
+      @extend .bs-popover-bottom;
+    }
+
+    &[x-placement^="right"] {
+      @extend .bs-popover-right;
+    }
+
+    &[x-placement^="left"] {
+      @extend .bs-popover-left;
+    }
+  }
+}
+
+.toasted-container {
+  &.full-width {
+    max-width: 100%;
+    width: calc(100% - #{$layout-padding} - #{$layout-padding-right});
+    transform: translateX(0);
+    left: 0;
+    @include media-breakpoint-down(md) {
+      width: calc(100% - #{$content-mobile-wrap-pl} - #{$content-mobile-wrap-pr});
+      left: 0;
+    }
+  }
+}
+.widget-header {
+  .selector-container {
+    width: 100%;
+    padding: 0 !important;
+    .selected-tag {
+      font-size: 1.2rem;
+    }
+    .highlight>a {
+      background: $that-cool-red !important;
+    }
+    .v-select .dropdown-toggle{
+      border: none;
+    }
+    .v-select .selected-tag {
+      font-family: Muli, sans-serif !important;
+      font-size: 1.1rem;
+      text-indent: 1rem;
+      color: #4b4b4b;
+
+    }
+    .v-select .open-indicator {
+      bottom: 15px;
+      right: 20px;
+    }
+    .v-select .open-indicator::before{
+      color: #000;
+      border-color: #000;
+    }
+    .v-select .dropdown-toggle .clear {
+      bottom: 18px;
+    }
+    .no-options {
+      font-family: Muli, sans-serif !important;
+    }
+    .selopt {
+      font-family: Muli, sans-serif !important;
+      width: 100%;
+      position: relative;
+      color: black;
+    }
+    .highlight>a>.selopt {
+      color: white !important;
+    }
+    .dropdown li {
+      border-bottom: 1px solid rgba(112, 128, 144, 0.1)
+    }
+    .dropdown li:last-child {
+      border-bottom: none;
+    }
+    .dropdown li a {
+      padding: 10px 20px;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      font-size: 1.25em;
+      color: #fff;
+    }
+    .dropdown li a .fa {
+      padding-right: 0.5em;
+    }
+  }
+}
+
+.v-select .dropdown-toggle .clear{
+  color: #fff;
+}
+
+.v-moon.v-moon1{
+  margin: 0 auto;
+}
+
+.sm-header > h3{
+  font-family: Montserrat !important;
+  font-size: 13px !important;
+  line-height: 1.5;
+}
+
+ul.sm-results>li {
+  font-family: Muli !important;
+}
+
+ul.sm-results.sm-regular>li:hover {
+  background-color: $that-cool-red !important;
+}
+
+.ql-toolbar.ql-snow {
+  font-family: Muli !important;
+  border: 0 !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important
+}
+
+.ql-container.ql-snow{
+  border: none !important;
+}
+
+.markdown-body{
+  font-family: Muli !important;
+}
+
+.vgt-responsive{
+  .vgt-table{
+    font-size: 13.6px !important;
+    font-weight: 300;
+    font-family: Muli;
+    td, th{
+      border-left: 1px solid #DCDFE6 !important;
+    }
+  }
+  
+}
+.vgt-input:focus,
+.vgt-select:focus {
+  border-color: $that-cool-red !important;
+}
+
+.vgt-global-search__input .input__icon .magnifying-glass{
+  border-color: $that-cool-red !important;
+  opacity: .6;
+  &:before{
+    background: darken($that-cool-red, 8%) !important;
+  }
+}
+
+.vgt-table thead th.sorting-desc:after{
+  border-top-color: $that-cool-red !important;
+}
+
+.vgt-table th.sorting:after{
+  border-bottom-color: $that-cool-red !important;
+}
+
+.time-picker{
+  font-family: Muli !important;
+}
+.v-transmit__upload-area {
+  background: #b9191212;
+  min-height: 0 !important;
+}
+.v-transmit__upload-area--is-dragging {
+  background-color: lighten($that-cool-red, 50%) !important;
+}
+
+
+.tree-arrow {
+ &.has-child{
+ &:after{
+   border-color: $that-cool-red !important;
+  border-bottom-color: hsla(9, 95%, 24%, 1) !important;
+ }
+}
+}
+
+.vue-tags-input{
+  .input {
+    border: 0 !important;
+    border-bottom: 1px solid #999 !important;
+    .new-tag-input-wrapper{
+      font-family: Montserrat;
+    }
+  }
+  .tag {
+    position: relative;
+    color: #2d2d2d !important;
+    background-color: transparent !important;
+    border: 1px solid $brand-primary;
+    &.valid {
+      border-color: $brand-success;
+    }
+    &.invalid {
+      border-color: $that-cool-red;
+    }
+  }
+  .autocomplete {
+    border: none !important;
+    font-family: Montserrat;
+    color: black;
+    .selected-item {
+      background-color: $that-cool-red !important;
+      color: white !important;
+    }
+    box-shadow: $dropdown-box-shadow;
+    li {
+      color: black !important;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: $dropdown-item-height;
+      font-size: $font-size-sm;
+      border-bottom: 1px solid rgba(112, 128, 144, 0.1);
+      padding: 10px 20px;
+      width: 100%;
+      align-items: center;
+      &:hover{
+         background-color: lighten($that-cool-red, 10%) !important;
+         color: $white !important;
+      }
+    }
+    .spinnerClass {
+      margin-top: 14px;
+    }
+  }
+}
+
+.v-dropdown-container {
+  border: 0 !important;
+  .sm-result-area {
+    border-radius: 3px;
+    &.sm-scroll-limit, ul{
+      padding: 0 !important;
+      .sm-divider {
+        margin: 0;
+        border-bottom-color: $that-cool-red;
+      }
+      .sm-sub-header{
+        margin: 0 !important;
+        & > p {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.v-note-wrapper {
+  &.markdown-body {
+    pre {
+      overflow: visible !important;
+      visibility: visible !important;
+    }
+    textarea {
+      max-height: 100%;
+    }
+    .v-note-op {
+      span, .op-image {
+        font-family: Montserrat !important;
+        font-size: 0.8rem !important;
+      }
+    }
+  }
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+  text-shadow: none !important;
+  font-size: .8rem;
+}
+
+.code-toolbar {
+  border-radius: 5px;
+}

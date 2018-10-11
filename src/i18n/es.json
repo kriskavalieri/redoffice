@@ -1,0 +1,122 @@
+{
+    "search": "Buscar",
+    "login": "Iniciar sesión",
+    "name": "Nombre",
+    "submit": "Mandar",
+    "email": "Email",
+    "navbar": {
+        "profile": "Perfil",
+        "settings": "Ajustes",
+        "logout": "Salir",
+        "notifs": {
+            "issues": "Cuestiones",
+            "notifications": "Notificaciones",
+            "messages": "Mensajes"
+        }
+    },
+    "sidebar": {
+        "Overview": "Visión de conjunto",
+        "Profile": "Perfil",
+        "Timeline": "Línea de tiempo",
+        "Charts": "Gráficos",
+        "echarts": "echarts",
+        "Vue-chartjs": "Vue-chartjs",
+        "Reports": "Informes",
+        "Gallery": "Galería",
+        "Forms": "Formularios",
+        "Editors": "Editores",
+        "Typography": "Tipografía",
+        "Kanban": "Kanban",
+        "icons": "Iconos",
+        "Ionic": "Ionic",
+        "Awesome font": "Awesome font",
+        "Blank page": "Página vacía",
+        "Authorization": "Autorización",
+        "404": "404",
+        "Login": "Iniciar sesión",
+        "Forgotten password": "Contraseña olvidada",
+        "Signup": "Registrar",
+        "Grid": "Grid",
+        "Components": "Componentes",
+        "Alerts": "Alertas",
+        "Buttons": "Botones",
+        "Cards": "Tarjetas",
+        "Collapse": "Acordeón",
+        "Helpers": "Auxiliares",
+        "Lists": "Listas",
+        "Loaders": "Cargadoras",
+        "Modal": "Modal",
+        "Progress": "Progreso",
+        "Switcher": "Conmutador",
+        "Tables": "Tablas",
+        "Tabs": "Tabulaciones",
+        "Tags": "Etiquetas",
+        "Toast": "Toast",
+        "Tree": "Arbol",
+        "Widgets": "Widgets"
+    },
+    "dashboard": {
+        "clients_so_far": "Clientes hasta ahora",
+        "clients_wtd": "Clientes esta semana",
+        "sales_so_far": "Ventas hasta ahora",
+        "sales_wtd": "Ventas esta semana",
+        "conversions": "Conversiones",
+        "views": "Visitas",
+        "sales_dc": "Ventas en DC",
+        "sales_az": "Ventas en Tuscon",
+        "users_table": "Usuarios",
+        "alerts": "Alertas"
+    },
+    "profile": {
+        "issues": "Cuestiones",
+        "this_month": "esta semana",
+        "tabs": {
+            "description": "Descripción",
+            "notifications": "Notificaciones",
+            "settings": "Ajustes"
+        }
+    },
+    "reports": {
+        "title": "Reportes diarios",
+        "jump_to_date": "Saltar a la fecha:",
+        "card_title": "Reporte diario no.",
+        "expand": "expandir"
+    },
+    "typo": {
+        "headers": "Títulos",
+        "text": "Textos",
+        "lists": "Listas"
+    },
+    "kanban": {
+        "todo": "Que hacer",
+        "in_progress": "En progreso",
+        "done": "Realizado",
+        "add_new_task": "Añadir nueva tarea",
+        "task_name": "Nombre de la tarea",
+        "task_desc": "Descripción de la tarea",
+        "add_subtask": "Añadir nueva subtarea",
+        "select_assignees": "Seleccionar cesionarios",
+        "tasks": [
+            "{count} tarea",
+            "{count} tareas"
+        ]
+    },
+    "auth": {
+        "404": "La página que estás buscando no existe",
+        "home": "Volver al tablero",
+        "pass": "Contraseña",
+        "forgotten_pass": "Contraseña olvidada?",
+        "no_account": "No tengo una cuenta",
+        "remember_me": "Recuérdame",
+        "confirm": "confirmar",
+        "have_account": "Ya tengo una cuanta",
+        "register": "Registrar",
+        "reset": "Restablecer la contraseña"
+    },
+    "modalcard": {
+        "cta_create": "Crear nueva tarjeta",
+        "card_name": "Nombre de tarjeta",
+        "card_val": "Valor de visualización de la tarjeta",
+        "card_txt": "Texto de visualización de la tarjeta"
+    }
+}

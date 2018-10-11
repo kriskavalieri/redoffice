@@ -1,0 +1,122 @@
+{
+    "search": "Search",
+    "login": "Login",
+    "name": "Name",
+    "submit": "Submit",
+    "email": "Email address",
+    "navbar": {
+        "profile": "Profile",
+        "settings": "Settings",
+        "logout": "Logout",
+        "notifs": {
+            "issues": "Issues",
+            "notifications": "Notifications",
+            "messages": "Messages"
+        }
+    },
+    "sidebar": {
+        "Overview": "Overview",
+        "Profile": "Profile",
+        "Timeline": "Timeline",
+        "Charts": "Charts",
+        "echarts": "echarts",
+        "Vue-chartjs": "Vue-chartjs",
+        "Reports": "Reports",
+        "Gallery": "Gallery",
+        "Forms": "Forms",
+        "Editors": "Editors",
+        "Typography": "Typography",
+        "Kanban": "Kanban",
+        "icons": "icons",
+        "Ionic": "Ionic",
+        "Awesome font": "Awesome font",
+        "Blank page": "Blank page",
+        "Authorization": "Authorization",
+        "404": "404",
+        "Login": "Login",
+        "Forgotten password": "Forgotten password",
+        "Signup": "Signup",
+        "Grid": "Grid",
+        "Components": "Components",
+        "Alerts": "Alerts",
+        "Buttons": "Buttons",
+        "Cards": "Cards",
+        "Collapse": "Collapse",
+        "Helpers": "Helpers",
+        "Lists": "Lists",
+        "Loaders": "Loaders",
+        "Modal": "Modal",
+        "Progress": "Progress",
+        "Switcher": "Switcher",
+        "Tables": "Tables",
+        "Tabs": "Tabs",
+        "Tags": "Tags",
+        "Toast": "Toast",
+        "Tree": "Tree",
+        "Widgets": "Widgets"
+    },
+    "dashboard": {
+        "clients_so_far": "Clients so far",
+        "clients_wtd": "Clients WTD",
+        "sales_so_far": "Sales so far",
+        "sales_wtd": "Sales WTD",
+        "conversions": "Conversions",
+        "views": "Views",
+        "sales_dc": "Sales in DC",
+        "sales_az": "Sales in Tuscon",
+        "users_table": "Users",
+        "alerts": "Alerts"
+    },
+    "profile": {
+        "issues": "Issues",
+        "this_month": "this month",
+        "tabs": {
+            "description": "Description",
+            "notifications": "Notifications",
+            "settings": "Settings"
+        }
+    },
+    "reports": {
+        "title": "Daily reports",
+        "jump_to_date": "Jump to date:",
+        "card_title": "Daily Report no.",
+        "expand": "expand"
+    },
+    "typo": {
+        "headers": "Headers",
+        "text": "Text",
+        "lists": "Lists"
+    },
+    "kanban": {
+        "todo": "Todo",
+        "in_progress": "In progress",
+        "done": "Done",
+        "add_new_task": "Add new task",
+        "task_name": "Task name",
+        "task_desc": "Task description",
+        "add_subtask": "Add new subtask",
+        "select_assignees": "Select assignees",
+        "tasks": [
+            "{count} task",
+            "{count} tasks"
+        ]
+    },
+    "auth": {
+        "404": "The page you're looking for does not exist",
+        "home": "Back to dashboard",
+        "pass": "Password",
+        "forgotten_pass": "Forgotten password?",
+        "no_account": "I don't have an account",
+        "remember_me": "Remember me",
+        "confirm": "confirm",
+        "have_account": "I already have an account",
+        "register": "Register",
+        "reset": "Reset password"
+    },
+    "modalcard": {
+        "cta_create": "Create new card",
+        "card_name": "Card name",
+        "card_val": "Card display value",
+        "card_txt": "Card display text"
+    }
+}

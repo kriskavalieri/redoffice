@@ -13,7 +13,7 @@ export default [
           iconClass: 'ion ion-ios-apps-outline'
         }
       },
-      component: () => import(/* webpackChunkName: "overview-chunk" */ './components/overview/Overview.vue')
+      component: () => import(/* webpackChunkName: "pages-chunk" */ './components/overview/Overview.vue')
     },
     {
       path: '/profile/',
@@ -25,7 +25,7 @@ export default [
           iconClass: "ion ion-ios-contact-outline"
         }
       },
-      component: () => import(/* webpackChunkName: "profile-chunk" */ './components/profile/Profile.vue')
+      component: () => import(/* webpackChunkName: "pages-chunk" */ './components/profile/Profile.vue')
     },
     {
       path: '/timeline/',
@@ -37,7 +37,7 @@ export default [
           iconClass: "ion ion-ios-calendar-outline"
         }
       },
-      component: () => import(/* webpackChunkName: "timeline-chunk" */ './components/timeline/Timeline.vue')
+      component: () => import(/* webpackChunkName: "pages-chunk" */ './components/timeline/Timeline.vue')
     },
     {
       path: '/charts/',
@@ -53,7 +53,7 @@ export default [
         {
           path: 'echarts',
           name: "echarts",
-          component: () => import(/* webpackChunkName: "report-chunk" */ './components/charts/ECharts.vue'),
+          component: () => import(/* webpackChunkName: "pages-chunk" */ './components/charts/ECharts.vue'),
           meta: {
             menu: {
               title: "echarts",
@@ -64,7 +64,7 @@ export default [
         {
           path: 'vuecharts',
           name: "vuecharts",
-          component: () => import(/* webpackChunkName: "report-chunk" */ './components/charts/VueCharts.vue'),
+          component: () => import(/* webpackChunkName: "pages-chunk" */ './components/charts/VueCharts.vue'),
           meta: {
             menu: {
               title: "Vue-chartjs",
@@ -84,7 +84,7 @@ export default [
           iconClass: "ion ion-ios-browsers-outline"
         }
       },
-      component: () => import(/* webpackChunkName: "report-chunk" */ './components/reports/Reports.vue')
+      component: () => import(/* webpackChunkName: "pages-chunk" */ './components/reports/Reports.vue')
     },
     {
       path: '/gallery/',
@@ -96,7 +96,7 @@ export default [
           iconClass: "ion ion-ios-image-outline"
         }
       },
-      component: () => import(/* webpackChunkName: "report-chunk" */ './components/gallery/Gallery.vue')
+      component: () => import(/* webpackChunkName: "pages-chunk" */ './components/gallery/Gallery.vue')
     },
     {
       path: '/forms/',
@@ -108,7 +108,7 @@ export default [
           iconClass: "ion ion-ios-card-outline"
         }
       },
-      component: () => import(/* webpackChunkName: "report-chunk" */ './components/forms/Forms.vue')
+      component: () => import(/* webpackChunkName: "pages-chunk" */ './components/forms/Forms.vue')
     },
     {
       path: '/editors/',
@@ -120,7 +120,7 @@ export default [
           iconClass: "ion ion-ios-create-outline"
         }
       },
-      component: () => import(/* webpackChunkName: "report-chunk" */ './components/editors/Editors.vue')
+      component: () => import(/* webpackChunkName: "pages-chunk" */ './components/editors/Editors.vue')
     },
     {
       path: '/typography/',
@@ -132,7 +132,7 @@ export default [
           iconClass: "ion ion-ios-information-circle-outline"
         }
       },
-      component: () => import(/* webpackChunkName: "report-chunk" */ './components/typography/Typography.vue')
+      component: () => import(/* webpackChunkName: "pages-chunk" */ './components/typography/Typography.vue')
     },
     {
       path: '/kanban/',
@@ -144,7 +144,7 @@ export default [
           iconClass: "ion ion-ios-clipboard-outline"
         }
       },
-      component: () => import(/* webpackChunkName: "report-chunk" */ './components/kanban/Kanban.vue')
+      component: () => import(/* webpackChunkName: "pages-chunk" */ './components/kanban/Kanban.vue')
     },
     {
       path: '/icons/',
@@ -160,7 +160,7 @@ export default [
         {
           path: 'ionic',
           name: "Ionic",
-          component: () => import(/* webpackChunkName: "report-chunk" */ './components/icons/Ionic.vue'),
+          component: () => import(/* webpackChunkName: "pages-chunk" */ './components/icons/Ionic.vue'),
           meta: {
             menu: {
               title: "Ionic",
@@ -171,7 +171,7 @@ export default [
         {
           path: 'awesome',
           name: "Awesome font",
-          component: () => import(/* webpackChunkName: "report-chunk" */ './components/icons/Awesome.vue'),
+          component: () => import(/* webpackChunkName: "pages-chunk" */ './components/icons/Awesome.vue'),
           meta: {
             menu: {
               title: "Awesome font",
@@ -191,7 +191,7 @@ export default [
           iconClass: "ion ion-ios-document-outline"
         }
       },
-      component: () => import(/* webpackChunkName: "report-chunk" */ './components/pages/Blank.vue')
+      component: () => import(/* webpackChunkName: "pages-chunk" */ './components/pages/Blank.vue')
     },
     {
       path: '/auth/',
@@ -207,7 +207,7 @@ export default [
         {
           path: '404',
           name: "404",
-          component: () => import(/* webpackChunkName: "report-chunk" */ './components/auth/404.vue'),
+          component: () => import(/* webpackChunkName: "pages-chunk" */ './components/auth/404.vue'),
           meta: {
             menu: {
               title: "404",
@@ -218,7 +218,7 @@ export default [
         {
           path: 'login',
           name: "Login",
-          component: () => import(/* webpackChunkName: "report-chunk" */ './components/auth/Login.vue'),
+          component: () => import(/* webpackChunkName: "pages-chunk" */ './components/auth/Login.vue'),
           meta: {
             menu: {
               title: "Login",
@@ -229,7 +229,7 @@ export default [
         {
           path: 'forgotten',
           name: "Forgotten",
-          component: () => import(/* webpackChunkName: "report-chunk" */ './components/auth/Forgotten.vue'),
+          component: () => import(/* webpackChunkName: "pages-chunk" */ './components/auth/Forgotten.vue'),
           meta: {
             menu: {
               title: "Forgotten password",
@@ -240,7 +240,7 @@ export default [
         {
           path: 'signup',
           name: "Signup",
-          component: () => import(/* webpackChunkName: "report-chunk" */ './components/auth/Signup.vue'),
+          component: () => import(/* webpackChunkName: "pages-chunk" */ './components/auth/Signup.vue'),
           meta: {
             menu: {
               title: "Signup",
@@ -260,7 +260,7 @@ export default [
           iconClass: "ion ion-ios-grid-outline"
         }
       },
-      component: () => import(/* webpackChunkName: "report-chunk" */ './components/grid/Grid.vue')
+      component: () => import(/* webpackChunkName: "pages-chunk" */ './components/grid/Grid.vue')
     },
     {
       path: '/components/',
@@ -276,7 +276,7 @@ export default [
         {
           path: 'alerts',
           name: "alerts",
-          component: () => import(/* webpackChunkName: "report-chunk" */ './components/alerts/Alerts.vue'),
+          component: () => import(/* webpackChunkName: "components-chunk" */ './components/alerts/Alerts.vue'),
           meta: {
             menu: {
               title: "Alerts",
@@ -288,7 +288,7 @@ export default [
         {
           path: 'buttons',
           name: "buttons",
-          component: () => import(/* webpackChunkName: "report-chunk" */ './components/buttons/Buttons.vue'),
+          component: () => import(/* webpackChunkName: "components-chunk" */ './components/buttons/Buttons.vue'),
           meta: {
             menu: {
               title: "Buttons",
@@ -300,7 +300,7 @@ export default [
         {
           path: 'cards',
           name: "cards",
-          component: () => import(/* webpackChunkName: "report-chunk" */ './components/cards/CardsMain.vue'),
+          component: () => import(/* webpackChunkName: "components-chunk" */ './components/cards/CardsMain.vue'),
           meta: {
             menu: {
               title: "Cards",
@@ -312,7 +312,7 @@ export default [
         {
           path: 'collapse',
           name: "Collapse",
-          component: () => import(/* webpackChunkName: "report-chunk" */ './components/collapse/Collapse.vue'),
+          component: () => import(/* webpackChunkName: "components-chunk" */ './components/collapse/Collapse.vue'),
           meta: {
             menu: {
               title: "Collapse",
@@ -324,7 +324,7 @@ export default [
         {
           path: 'helpers',
           name: "Helpers",
-          component: () => import(/* webpackChunkName: "report-chunk" */ './components/helpers/Helpers.vue'),
+          component: () => import(/* webpackChunkName: "components-chunk" */ './components/helpers/Helpers.vue'),
           meta: {
             menu: {
               title: "Helpers",
@@ -336,7 +336,7 @@ export default [
         {
           path: 'lists',
           name: "Lists",
-          component: () => import(/* webpackChunkName: "report-chunk" */ './components/lists/Lists.vue'),
+          component: () => import(/* webpackChunkName: "components-chunk" */ './components/lists/Lists.vue'),
           meta: {
             menu: {
               title: "Lists",
@@ -355,12 +355,12 @@ export default [
               iconClass: "ion ion-ios-refresh-circle-outline"
             }
           },
-          component: () => import(/* webpackChunkName: "report-chunk" */ './components/loading/Loading.vue')
+          component: () => import(/* webpackChunkName: "components-chunk" */ './components/loading/Loading.vue')
         },
         {
           path: 'modal',
           name: "Modal",
-          component: () => import(/* webpackChunkName: "report-chunk" */ './components/modal/Modal.vue'),
+          component: () => import(/* webpackChunkName: "components-chunk" */ './components/modal/Modal.vue'),
           meta: {
             menu: {
               title: "Modal",
@@ -372,7 +372,7 @@ export default [
         {
           path: 'progress',
           name: "Progress",
-          component: () => import(/* webpackChunkName: "report-chunk" */ './components/progress/Progress.vue'),
+          component: () => import(/* webpackChunkName: "components-chunk" */ './components/progress/Progress.vue'),
           meta: {
             menu: {
               title: "Progress",
@@ -384,7 +384,7 @@ export default [
         {
           path: 'switcher',
           name: "Switcher",
-          component: () => import(/* webpackChunkName: "report-chunk" */ './components/switcher/Switcher.vue'),
+          component: () => import(/* webpackChunkName: "components-chunk" */ './components/switcher/Switcher.vue'),
           meta: {
             menu: {
               title: "Switcher",
@@ -396,7 +396,7 @@ export default [
         {
           path: 'tables',
           name: "tables",
-          component: () => import(/* webpackChunkName: "report-chunk" */ './components/tables/Tables.vue'),
+          component: () => import(/* webpackChunkName: "components-chunk" */ './components/tables/Tables.vue'),
           meta: {
             menu: {
               title: "Tables",
@@ -408,7 +408,7 @@ export default [
         {
           path: 'tabs',
           name: "Tabs",
-          component: () => import(/* webpackChunkName: "report-chunk" */ './components/tabs/Tabs.vue'),
+          component: () => import(/* webpackChunkName: "components-chunk" */ './components/tabs/Tabs.vue'),
           meta: {
             menu: {
               title: "Tabs",
@@ -420,7 +420,7 @@ export default [
         {
           path: 'tags',
           name: "Tags",
-          component: () => import(/* webpackChunkName: "report-chunk" */ './components/tags/Tags.vue'),
+          component: () => import(/* webpackChunkName: "components-chunk" */ './components/tags/Tags.vue'),
           meta: {
             menu: {
               title: "Tags",
@@ -432,7 +432,7 @@ export default [
         {
           path: 'toast',
           name: "Toast",
-          component: () => import(/* webpackChunkName: "report-chunk" */ './components/toast/Toast.vue'),
+          component: () => import(/* webpackChunkName: "components-chunk" */ './components/toast/Toast.vue'),
           meta: {
             menu: {
               title: "Toast",
@@ -444,7 +444,7 @@ export default [
         {
           path: 'tree',
           name: "Tree",
-          component: () => import(/* webpackChunkName: "report-chunk" */ './components/tree/Tree.vue'),
+          component: () => import(/* webpackChunkName: "components-chunk" */ './components/tree/Tree.vue'),
           meta: {
             menu: {
               title: "Tree",
@@ -456,7 +456,7 @@ export default [
         {
           path: 'widgets',
           name: "widgets",
-          component: () => import(/* webpackChunkName: "report-chunk" */ './components/widgets/Widgets.vue'),
+          component: () => import(/* webpackChunkName: "components-chunk" */ './components/widgets/Widgets.vue'),
           meta: {
             menu: {
               title: "Widgets",
